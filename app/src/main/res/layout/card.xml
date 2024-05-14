@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Name"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="8dp"
+                    android:text="Task Description"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/description"
+                    android:layout_marginTop="16dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/update"
+                        android:layout_width="60dp"
+                        android:layout_height="46dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#E2762D"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        app:icon="@drawable/edit"
+                        app:iconGravity="textTop"
+                        app:iconSize="20dp" />
+
+                    <Button
+                        android:id="@+id/delete"
+                        android:layout_width="60dp"
+                        android:layout_height="46dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#92410B"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        app:icon="@drawable/icons8_delete_24__2_"
+                        app:iconGravity="textTop"
+                        app:iconSize="20dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
